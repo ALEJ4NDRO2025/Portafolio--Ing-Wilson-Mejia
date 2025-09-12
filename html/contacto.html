@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Portafolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto – Portafolio</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+  <script src="https://kit.fontawesome.com/3fac51396e.js" crossorigin="anonymous"></script>
 </head>
-<!-- Menu de header -->
-<div class="container-header">
+<body>
+   <!-- Menú de header -->
+   <div class="container-header">
     <header>
       <div class="logo">
         <a href="#">Ing Wilson Mejia</a>
@@ -15,17 +18,59 @@
       <nav class="nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="yo.html">Sobre Mi</a></li>
+          <li><a href="yo.html">Sobre mí</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="curriculum.html">Currículum</a></li>
           <li><a href="portafolio.html">Portafolio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
   </div>
-  
-<body>
-    
+
+   <!-- Contenido principal -->
+   <main>
+    <section id="contacto" class="contactame">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto o una idea? Escríbeme y hablemos.</p>
+
+        <div class="contacto-contenedor">
+            <!-- Formulario -->
+            <div class="formulario">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo" required>
+                    <input type="text" placeholder="Asunto del mensaje" required>
+                    <textarea placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Mapa -->
+            <div class="mapa">
+                <iframe 
+                    title="Ubicación Garzón Huila"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15902.978050237846!2d-75.629!3d2.1953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f93e07e17d14d%3A0x8cda3d3d8d6bbf2!2sGarz%C3%B3n%2C%20Huila!5e0!3m2!1ses!2sco!4v1694459123456!5m2!1ses!2sco"
+                    width="100%" height="100%" style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+</footer>
 </body>
 </html>

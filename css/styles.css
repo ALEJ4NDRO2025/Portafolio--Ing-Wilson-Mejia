@@ -965,3 +965,170 @@ footer {
   .title-projects { font-size: 32px; }
   .subtitle { font-size: 14px; }
 }
+
+
+/* ===== CSS CONTACTO (paleta sitio: oscuro + #1cb698) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family:"Work Sans", system-ui, -apple-system, Arial, sans-serif; }
+
+/* Fix header común del sitio */
+.container-header{ background:#000; position:fixed; width:100%; top:0; left:0; z-index:99; }
+.container-header header{ max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; }
+.container-header .logo a{ font-family: Righteous, cursive; font-size:36px; color:#1cb698; text-decoration:none; }
+.container-header header ul{ display:flex; list-style:none; gap:12px; }
+.container-header header nav ul li a{ color:#fff; padding:6px 10px; text-decoration:none; transition:.25s; border-radius:6px; }
+.container-header header nav ul li a:hover,
+.container-header header nav ul li a.active{ color:#1cb698; background:rgba(28,182,152,.12); }
+
+/* Sección Contacto */
+.contactame{
+  margin-top:80px; /* despega del header fijo */
+  padding:60px 20px 40px;
+  background: linear-gradient(to top, rgba(30,35,38,.9), rgba(30,35,38,1));
+  color:#e9eef2;
+  text-align:center;
+}
+.contactame h2{
+  font-size:42px;
+  color:#1cb698;
+  margin-bottom:8px;
+}
+.contactame p{
+  color:#cdd6dd;
+  margin:0 auto 24px;
+  max-width:760px;
+}
+
+/* Layout formulario / mapa */
+.contacto-contenedor{
+  max-width:1100px;
+  margin:24px auto 0;
+  display:flex;
+  gap:32px;
+  align-items:stretch;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* Card formulario */
+.formulario{
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(2px);
+  border:1px solid rgba(255,255,255,.08);
+  padding:20px;
+  border-radius:16px;
+  flex:1 1 460px;
+  max-width:520px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+
+.campo{ text-align:left; margin-bottom:16px; }
+.campo label{
+  display:block;
+  font-weight:600;
+  margin-bottom:6px;
+  color:#e9eef2;
+}
+.formulario input,
+.formulario textarea{
+  width:100%;
+  padding:12px 14px;
+  color:#e9eef2;
+  background:#14181b;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:10px;
+  outline:none;
+  transition:border-color .2s, box-shadow .2s;
+}
+.formulario input::placeholder,
+.formulario textarea::placeholder{ color:#8fa2b0; }
+.formulario input:focus,
+.formulario textarea:focus{
+  border-color:#1cb698;
+  box-shadow:0 0 0 3px rgba(28,182,152,.2);
+}
+
+/* Botón */
+.btn-enviar{
+  width:100%;
+  padding:12px 14px;
+  border:none;
+  background:#1cb698;
+  color:#0b0e10;
+  font-weight:700;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform .2s, background .2s, color .2s;
+}
+.btn-enviar:hover{
+  background:#15a88f;
+  color:#fff;
+  transform:translateY(-1px);
+}
+
+/* Mapa */
+.mapa{
+  flex:1 1 360px;
+  min-width:300px;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+.mapa iframe{ width:100%; height:100%; border:0; }
+
+/* Footer (coherente con el sitio) */
+footer{ background:#000; color:#fff; padding:28px 20px 36px; text-align:center; }
+footer .redes{ display:flex; gap:14px; justify-content:center; }
+footer .redes a{
+  color:#fff; width:42px; height:42px; line-height:42px; border-radius:100%;
+  display:inline-block; border:1px solid rgba(255,255,255,.15);
+  transition:.2s;
+}
+footer .redes a:hover{ color:#1cb698; border-color:#1cb698; }
+.arriba{
+  display:inline-grid; place-items:center; width:44px; height:44px; border-radius:50%;
+  background: rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.15);
+  margin-bottom:12px; transition:.2s;
+}
+.arriba:hover{ background:rgba(28,182,152,.2); color:#1cb698; border-color:#1cb698; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .container-header header{ padding:12px 16px; }
+  .container-header .logo a{ font-size:28px; }
+}
+
+@media (max-width: 768px){
+  .contactame h2{ font-size:34px; }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Empuja el footer hacia abajo */
+}
+
+formulario input,
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 25px;   /* antes tenías 20px, lo ampliamos */
+  padding: 15px;
+  border: 1px solid #b68d1c; /* le damos borde visible */
+  border-radius: 10px;
+  outline: none;
+  background: #111;         /* un fondo oscuro acorde a tu estilo */
+  color: #fff;              /* texto blanco para contraste */
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #bbb; /* color suave para placeholder */
+  font-size: 14px;
+}
