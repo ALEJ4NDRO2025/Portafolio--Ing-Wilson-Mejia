@@ -251,6 +251,89 @@ footer .arriba{
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
+/*=== CSS- SOBRE MI. Responsive ===*/
+
+@media (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-header header nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .container-header header ul {
+    margin: 10px 0;
+  }
+
+
+.container-header header nav ul li {
+  margin: 10px 0;
+}
+
+.sobremi{
+  padding: 80px 15px;
+}
+
+.sobremi h2{
+  font-size: 36px;
+}
+
+.sobremi .fila {
+  flex-direction: column;
+}
+
+.sobremi .fila .col {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sobremi .fila .col h3{
+  font-size: 24px;
+}
+
+.sobremi .fila .col ul strong{
+  width: 100px;
+  text-align: left;
+}
+
+.sobremi .fila .col .container-intereses {
+  justify-content: center;
+}
+
+.sobremi .fila .col .container-intereses .interes {
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+}
+
+footer .redes a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-header header nav ul li a:hover {
   color: #1cb698;
 }
@@ -458,6 +541,103 @@ footer .redes a:hover {
 
 
 /* === SKILLS === */
+
+
+
+/* === SKILLS CSS RESPONSIVE === */
+
+
+/* Tablets y móviles (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .container-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .skills {
+    padding: 40px 15px;
+  }
+
+  .skills h2 {
+    font-size: 36px;
+  }
+
+  .skills .fila {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills .fila .col {
+    padding: 0;
+    min-width: 100%;
+  }
+
+  .skills .fila .col h3 {
+    font-size: 24px;
+  }
+
+  .skills .skills .barra-skills {
+    width: 100%;
+  }
+
+  .skills .skills .barra-skills span {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    top: -15px;
+    right: -12px;
+  }
+
+  footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .skills {
   color: #fff;
   padding: 60px 20px;
@@ -1246,3 +1426,24 @@ formulario input,
 
 
 
+/* ===== VIDEO DE FONDO ===== */
+#bg-video {
+  position: fixed;      /* fijo en pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* ajusta para que siempre llene */
+  z-index: -2;          /* detrás de todo */
+}
+
+/* Capa oscura encima del video (para mejorar contraste del texto) */
+.overlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* ajusta la opacidad */
+  z-index: -1;                 /* entre el video y el contenido */
+}
