@@ -250,6 +250,24 @@ footer .arriba{
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+
+.container-header header nav ul li a:hover {
+  color: #1cb698;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1cb698;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -1132,3 +1150,99 @@ formulario input,
   color: #bbb; /* color suave para placeholder */
   font-size: 14px;
 }
+
+/* === HEADER === */
+.container-header {
+  background: #000;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.container-header header {
+  position: relative; /* Para anclar el menú desplegable */
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.container-header .logo a {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+
+/* Lista horizontal en escritorio */
+.container-header header ul {
+  list-style: none;
+  display: flex;
+}
+.container-header header ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 6px 4px;
+  transition: .3s;
+}
+.container-header header ul li a:hover {
+  color: #1cb698;
+}
+
+/* === TOGGLE === */
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none; /* solo en móvil */
+  font-size: 28px;
+  cursor: pointer;
+  color: #1cb698;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  z-index: 300;
+}
+
+/* === Responsive nav === */
+@media (max-width:768px){
+  .menu-icon { display: block; }
+  
+  .container-header header .nav ul {
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0,0,0,.85);
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 6px 18px rgba(0,0,0,.4);
+    z-index: 250;
+  }
+  .container-header header .nav ul li {
+    margin: 5px 0;
+  }
+  .container-header header .nav ul li a {
+    display: block;
+    padding: 10px 16px;
+    text-align: left;
+  }
+
+  /* Mostrar menú cuando se activa el checkbox */
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+

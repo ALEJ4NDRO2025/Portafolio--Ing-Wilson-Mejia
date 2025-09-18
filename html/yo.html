@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/3fac51396e.js" crossorigin="anonymous"></script>
-    <title>Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://kit.fontawesome.com/3fac51396e.js" crossorigin="anonymous"></script>
+  <title>Portafolio</title>
 </head>
-<!-- Menu de header -->
-<div class="container-header">
+<body>
+  <!-- Menu de header -->
+  <div class="container-header">
     <header>
       <div class="logo">
         <a href="#">Ing Wilson Mejia</a>
       </div>
+
+      <!-- Toggle para menú responsive -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Navegación -->
       <nav class="nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -25,77 +34,47 @@
       </nav>
     </header>
   </div>
-<body>
-    <!-- SOBRE MI-->
-     <section id="sobremi" class="sobremi">
-      <div class="container-section">
-        <h2>Sobre Mi</h2>
-        <p><span>Soy Wilson Alejandro Mejia Calderon.</span> Soy Wilson Alejandro Mejia Calderon.</span> Ingeniero de Sistemas con experiencia en desarrollo web, ciencia de datos e inteligencia artificial. Me apasiona crear soluciones innovadoras y eficientes que impulsen el crecimiento empresarial y mejoren la experiencia del usuario. Con habilidades en programación, análisis de datos y aprendizaje automático, estoy comprometido a transformar ideas en realidades tecnológicas. </p>
-        <div class="fila">
-          <div class="col">
-            <h3> Datos personales </h3>
-            <ul>
-              <li>
-                <strong>Cumpleaños</strong> 
-                <span>21-04-2007</span>
-              </li>
-              <li>
-                <strong>Telefono</strong> 
-                <span>+57 311 854 0079</span>
-              </li>
-              <li>
-                <strong>Email</strong> 
-                <span>alejandromejia2007l@gmail.com</span>
-              </li>
-              <li>
-                <strong>Direccion</strong> 
-                <span>Garzon Huila Colombia</span>
-              </li>
-              <li>
-                <strong>Cargo</strong> 
-                <span>Aprendiz</span>
-              </li>
-            </ul>
-          </div>
-          <!-- INTERESES -->
-           <div class="col">
-            <h3>INTERESES</h3>
-            <div class="container-intereses">
-              <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>Musica</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-film"></i>
-                <span>Pelicula</span>
-              </div>
+
+  <!-- SOBRE MI-->
+  <section id="sobremi" class="sobremi">
+    <div class="container-section">
+      <h2>Sobre Mi</h2>
+      <p>
+        <span>Soy Wilson Alejandro Mejia Calderon.</span>
+        Ingeniero de Sistemas con experiencia en desarrollo web, ciencia de datos e inteligencia artificial. 
+        Me apasiona crear soluciones innovadoras y eficientes que impulsen el crecimiento empresarial y 
+        mejoren la experiencia del usuario. Con habilidades en programación, análisis de datos y 
+        aprendizaje automático, estoy comprometido a transformar ideas en realidades tecnológicas.
+      </p>
+
+      <div class="fila">
+        <!-- Datos personales -->
+        <div class="col">
+          <h3>Datos personales</h3>
+          <ul>
+            <li><strong>Cumpleaños:</strong> <span>21-04-2007</span></li>
+            <li><strong>Teléfono:</strong> <span>+57 311 854 0079</span></li>
+            <li><strong>Email:</strong> <span>alejandromejia2007l@gmail.com</span></li>
+            <li><strong>Dirección:</strong> <span>Garzón, Huila - Colombia</span></li>
+            <li><strong>Cargo:</strong> <span>Aprendiz</span></li>
+          </ul>
+        </div>
+
+        <!-- Intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="container-intereses">
             <div class="interes">
-               <i class="fa-solid fa-gamepad"></i>
-               <span>Juegos</span>
+              <i class="fa-solid fa-headphones"></i>
+              <span>Música</span>
             </div>
             <div class="interes">
-               <i class="fa-solid fa-plane"></i>
-               <span>Viajar</span>
-           </div>
-        </div>
-      </div>
-    </div>
-     </section>
-
-     /*FOOTER*/
-<footer>
-    <a href="#inicio" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
-    </a>
-    <div class="redes">
-        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-    </div>
-</footer>
-    
-</body>
-</html>
-</body>
-</html>
+              <i class="fa-solid fa-film"></i>
+              <span>Películas</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>Juegos</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i

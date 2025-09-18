@@ -8,19 +8,27 @@
   <script src="https://kit.fontawesome.com/3fac51396e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header fijo -->
+  <!-- Menu de header -->
   <div class="container-header">
     <header>
       <div class="logo">
         <a href="#">Ing Wilson Mejia</a>
       </div>
-      <nav class="nav" aria-label="Principal">
+
+      <!-- Toggle para menú responsive -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Navegación -->
+      <nav class="nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="yo.html">Sobre Mi</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="portafolio.html" class="active">Portafolio</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
